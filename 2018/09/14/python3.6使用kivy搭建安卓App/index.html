@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="None">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        使用Python3.6搭建安卓App - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../../css/aircloud.css">
+    <link rel="stylesheet" href="../../../../css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>lamia</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="../../../../index.html">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="../../../../tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="../../../../archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#使用Python3-6搭建安卓App"><span class="toc-text">使用Python3.6搭建安卓App</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装依赖库"><span class="toc-text">安装依赖库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Win10"><span class="toc-text">Win10</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署与安装"><span class="toc-text">部署与安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子"><span class="toc-text">例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#调用摄像头"><span class="toc-text">调用摄像头</span></a></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        使用Python3.6搭建安卓App
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2018-09-14 09:20:15</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#python, 安卓" title="python, 安卓">python, 安卓</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="使用Python3-6搭建安卓App"><a href="#使用Python3-6搭建安卓App" class="headerlink" title="使用Python3.6搭建安卓App"></a>使用Python3.6搭建安卓App</h1><hr>
+<p>[TOC]</p>
+<h2 id="安装依赖库"><a href="#安装依赖库" class="headerlink" title="安装依赖库"></a>安装依赖库</h2><h3 id="Win10"><a href="#Win10" class="headerlink" title="Win10"></a>Win10</h3><ol>
+<li>pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew kivy.deps.gstreamer –extra-index-url <a href="https://kivy.org/downloads/packages/simple/" target="_blank" rel="noopener">https://kivy.org/downloads/packages/simple/</a></li>
+<li>pip install kivy<blockquote>
+<p>成功之后 运行 <figure class="highlight plain"><figcaption><span>kivy ``` 会有</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">![enter description here](/images/使用Python3.6搭建安卓App/test_import_kivy.png)</span><br><span class="line">### Linux</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 准备py文件</span><br><span class="line">新建一个app.py文件， 内容为</span><br><span class="line">``` python</span><br><span class="line">from kivy.app import App</span><br><span class="line">from kivy.uix.button import Button</span><br><span class="line"></span><br><span class="line">class TestApp(App):</span><br><span class="line">  def build(self):</span><br><span class="line">    return Button(text=&apos;Hello,kivy&apos;)</span><br><span class="line"></span><br><span class="line">TestApp().run()</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+</li>
+</ol>
+<p>在win10下测试代码<br>打开win cmd, 运行 python app.py 效果图为：<br><img src="/2018/09/14/python3.6使用kivy搭建安卓App/images/使用Python3.6搭建安卓App/test_run_app_on_win.png" alt="test_run_app_on_win"><br>点击”Hello,kivy”字样会变颜色， 如下：<br><img src="/2018/09/14/python3.6使用kivy搭建安卓App/images/使用Python3.6搭建安卓App/test_run_app_on_win_click.png" alt="test_run_app_on_win_click"><br>按F1会出现属性菜单， 如下：<br><img src="/2018/09/14/python3.6使用kivy搭建安卓App/images/使用Python3.6搭建安卓App/test_run_app_on_win_f1.png" alt="test_run_app_on_win_f1"></p>
+<h2 id="部署与安装"><a href="#部署与安装" class="headerlink" title="部署与安装"></a>部署与安装</h2><p>在Linux（虚拟机也可）安装buildozer</p>
+<blockquote>
+<p>git clone <a href="https://github.com/kivy/buildozer.git" target="_blank" rel="noopener">https://github.com/kivy/buildozer.git</a><br>pip install .</p>
+</blockquote>
+<p>运行 <figure class="highlight plain"><figcaption><span>init```生成buildozer.spec配置文件，修改其中的某些必要字段：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; title, package.name, package.domain, version</span><br><span class="line"></span><br><span class="line">执行```buildozer -v android debug```在./bin目录下生成apk文件</span><br><span class="line">&gt; 注：第一次编译时需要翻墙下载必要的工具，自备梯子且时间较久。</span><br><span class="line"></span><br><span class="line">## 问题</span><br><span class="line">&gt; 等待很久：更新android SDK的问题，需要翻墙或者修改代理</span><br><span class="line">- 修改anaconda目录下的buildozer/targets/android.py，找到_android_list_sdk(), _android_update_sdk()</span><br><span class="line">- 修改其中的cmd为加上``` --proxy-host mirrors.neusoft.edu.cn --proxy-port 80 -s```即可加入代理更新SDK</span><br><span class="line">&gt; 无法在bin目录下生成apk：需要解决gradle的问题</span><br><span class="line">- 修改anaconda目录下的buildozer/targets/android.py， 找到```build_package```函数，并在```copyfile```之前修改变量```is_gradle_build = False</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>Aidi cannot be excuted</p>
+<ul>
+<li>执行<figure class="highlight plain"><figcaption><span>yum apt-get install lib32z1```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 应用</span><br><span class="line">与win10上模拟的结果一致。</span><br><span class="line"></span><br><span class="line">## 调试</span><br><span class="line">- 在main.py中设置日志级别</span><br><span class="line">``` python</span><br><span class="line">import logging</span><br><span class="line">from kivy.logger import Logger</span><br><span class="line">Logger.setLevel(logging.TRACE)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</blockquote>
+<ul>
+<li>安装adb工具，连接电脑并打开开发者模式，然后输入<figure class="highlight plain"><figcaption><span>logcat | grep python```找到输出日志中的```I/python```开头的标识符</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 总结</span><br><span class="line">``` flow</span><br><span class="line">start=&gt;start</span><br><span class="line">end=&gt;end</span><br><span class="line"></span><br><span class="line">op0=&gt;operation: 下载依赖项</span><br><span class="line">op1=&gt;operation: 修改android.py中的list和update代理服务，从而使得SDK能够正常更新</span><br><span class="line">op2=&gt;operation: 修改android.py中的is_gradle_build=False从而使得生成的apk能够被相应的拷贝到bin输出目录下</span><br><span class="line">op3=&gt;operation: 安装apk到手机调试</span><br><span class="line"></span><br><span class="line">start-&gt;op0-&gt;op1-&gt;op2-&gt;op3-&gt;end</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="调用摄像头"><a href="#调用摄像头" class="headerlink" title="调用摄像头"></a>调用摄像头</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">from</span> kivy.logger <span class="keyword">import</span> Logger</span><br><span class="line">Logger.setLevel(logging.TRACE)</span><br><span class="line"><span class="keyword">from</span> kivy.app <span class="keyword">import</span> App</span><br><span class="line"><span class="keyword">from</span> kivy.lang <span class="keyword">import</span> Builder</span><br><span class="line"><span class="keyword">from</span> kivy.uix.boxlayout <span class="keyword">import</span> BoxLayout</span><br><span class="line"><span class="keyword">from</span> kivy.uix.button <span class="keyword">import</span> Button</span><br><span class="line"></span><br><span class="line">Builder.load_string(<span class="string">'''</span></span><br><span class="line"><span class="string">&lt;CameraClick&gt;:</span></span><br><span class="line"><span class="string">  orientation: 'vertical'</span></span><br><span class="line"><span class="string">  Camera:</span></span><br><span class="line"><span class="string">    id: camera</span></span><br><span class="line"><span class="string">    index: 0</span></span><br><span class="line"><span class="string">    resolution: (1280, 720)</span></span><br><span class="line"><span class="string">    play: False</span></span><br><span class="line"><span class="string">    process: False</span></span><br><span class="line"><span class="string">  ToggleButton:</span></span><br><span class="line"><span class="string">    text: 'Play'</span></span><br><span class="line"><span class="string">    on_press: root.play()</span></span><br><span class="line"><span class="string">    size_hint_y: None</span></span><br><span class="line"><span class="string">    height: '48dp'</span></span><br><span class="line"><span class="string">  ToggleButton:</span></span><br><span class="line"><span class="string">    text: 'Run' if (camera.process is False) else 'Stop'</span></span><br><span class="line"><span class="string">    on_press: root.process()</span></span><br><span class="line"><span class="string">    size_hint_y: None</span></span><br><span class="line"><span class="string">    height: '48dp'</span></span><br><span class="line"><span class="string">  ToggleButton:</span></span><br><span class="line"><span class="string">    text: 'Overturn'</span></span><br><span class="line"><span class="string">    on_press: root.overturn()</span></span><br><span class="line"><span class="string">    size_hint_y: None</span></span><br><span class="line"><span class="string">    height: '48dp'</span></span><br><span class="line"><span class="string">  Button:</span></span><br><span class="line"><span class="string">    text: 'Capture'</span></span><br><span class="line"><span class="string">    size_hint_y: None</span></span><br><span class="line"><span class="string">    height: '48dp'</span></span><br><span class="line"><span class="string">    on_press: root.capture()</span></span><br><span class="line"><span class="string">'''</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CameraClick</span><span class="params">(BoxLayout)</span>:</span></span><br><span class="line">  <span class="string">'''</span></span><br><span class="line"><span class="string">  '''</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    self._print(<span class="string">'Start Here'</span>)</span><br><span class="line">    super(CameraClick, self).__init__()</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">_print</span><span class="params">(self, inputs = <span class="string">''</span>)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    ctx = <span class="string">'[*] '</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">50</span>):</span><br><span class="line">      ctx += <span class="string">'* '</span></span><br><span class="line">    logging.info(ctx)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">      <span class="keyword">if</span> i == <span class="number">2</span>:</span><br><span class="line">        logging.info(<span class="string">'[*]'</span> + <span class="string">'\t\t\t\t'</span> + inputs + <span class="string">' '</span> + time.strftime(<span class="string">'%Y/%m/%d %H:%M:%S'</span>))</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">        logging.info(<span class="string">'[*]'</span>)</span><br><span class="line">    ctx = <span class="string">'[*] '</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">50</span>):</span><br><span class="line">      ctx += <span class="string">'* '</span></span><br><span class="line">    logging.info(ctx)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">__del__</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    self._print(<span class="string">'End Here'</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">play</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    camera = self.ids[<span class="string">'camera'</span>]</span><br><span class="line">    camera.play = <span class="keyword">not</span> camera.play</span><br><span class="line">    logging.info(<span class="string">'[* &lt;&lt; Press &gt;&gt; *]'</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">process</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    camera = self.ids[<span class="string">'camera'</span>]</span><br><span class="line">    <span class="keyword">if</span> camera.play <span class="keyword">is</span> <span class="keyword">True</span>:</span><br><span class="line">      camera.process = <span class="keyword">not</span> camera.process</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      camera.process = <span class="keyword">False</span></span><br><span class="line">    logging.info(<span class="string">'[* &lt;&lt; Process &gt;&gt; *]'</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">overturn</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    camera = self.ids[<span class="string">'camera'</span>]</span><br><span class="line">    camera.index = <span class="number">1</span> - camera.index</span><br><span class="line">    logging.info(<span class="string">'[* &lt;&lt; Overturn &gt;&gt; *]'</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">capture</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    camera = self.ids[<span class="string">'camera'</span>]</span><br><span class="line">    timestr = time.strftime(<span class="string">'%Y%m%d_%H%M%S'</span>)</span><br><span class="line">    camera.export_to_png(<span class="string">'/sdcard/app_lamia/images/IMG_&#123;&#125;.jpg'</span>.format(timestr))</span><br><span class="line">    logging.info(<span class="string">'[* &lt;&lt; Captured &gt;&gt; *]'</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestCameta</span><span class="params">(App)</span>:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">build</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> CameraClick()</span><br><span class="line"></span><br><span class="line">TestCameta().run()</span><br></pre></td></tr></table></figure>
+<p>实际编译之后会出现如下问题，若程序闪退需打开abd并grep python相应的日志输出：</p>
+<ol>
+<li>ImportError，no module named XXX<blockquote>
+<p>在buildozer.spec中增添相应的python库， 如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. 无法调用摄像头或者闪退，这是因为没有给apk相应的权限，需要在buildozer.spec中修改</span><br><span class="line">&gt; ```android.permissions = INTERNET, CAMERA, CHANGE_WIFI_STATE</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+<hr>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = ""
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../../../js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
